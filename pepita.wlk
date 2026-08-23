@@ -103,4 +103,39 @@ object rebeca {
  }
 }
 
+/*
+Ejercicio 6: Reflexión sobre los conceptos
+Teniendo en cuenta tu solución del problema, respondé las preguntas siguientes:
+
+¿Qué métodos son consultas y cuáles son órdenes?
+ - consultas: Todos aquellos metodos que tienen return como cansada(), cenas(),
+    podrida(), más los getter getCalorias() y getEnergia().
+
+ - ordenes: Aquellos que modifican el estado, como volar(), alimentar(). setAve(), 
+    comer(), descansar() y entrenador().
+
+En cuanto a cada situación que manifiesta polimorfismo:
+
+a. ¿Cuál es el mensaje polimórfico y quién lo envía?
+
+ - El mensaje polimórfico es comer(alimento) y lo envía rebeca a través de ave. 
+  Como ave puede referenciar a distintas aves, el mismo mensaje 
+  puede ser recibido por pepita o pepon.
+
+- El otro mensaje polimórfico es getCalorias(). Lo envía el ave que está comiendo, 
+  es decir, Pepita o Pepón, a través del parámetro alimento.
+
+b. Considerando los objetos que entienden el mensaje polimórfico 
+¿Qué nombre le pondrías al tipo polimórfico?
+
+- Al primer tipo polimórfico le pondría Ave, ya que representa a los objetos 
+  que pueden comportarse como aves y responder al mensaje comer.
+
+- Al segundo ALmento Porque tanto el alpiste como la manzana son alimentos 
+  que saben responder a getCalorias().
+
+d. ¿Qué objetos implementan ese tipo?
+- Los objetos que implementan ese tipo son pepita y pepon, en el primer caso, 
+  alpiste y manzana en el segundo.
+*/
 
